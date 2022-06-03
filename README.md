@@ -22,7 +22,43 @@ conda create --name raft
 conda activate raft
 conda install pytorch=1.6.0 torchvision=0.7.0 cudatoolkit=10.1 matplotlib tensorboard scipy opencv -c pytorch
 ```
-
+## Folder Structure:
+```
+📦Draft-Marker-Reading-Water-Level-Detection
+ ┣ 📂Results
+ ┃ ┣ 📜Output1.png
+ ┃ ┣ 📜Output_screenshot_03.05.2022.png
+ ┃ ┣ 📜RAFT.png
+ ┃ ┣ 📜Water_Level_Detection_Result_Frame.png
+ ┃ ┣ 📜gray1.png
+ ┃ ┗ 📜gray_screenshot_03.05.2022.png
+ ┣ 📂alt_cuda_corr
+ ┃ ┣ 📜correlation.cpp
+ ┃ ┣ 📜correlation_kernel.cu
+ ┃ ┗ 📜setup.py
+ ┣ 📂core
+ ┃ ┣ 📂utils
+ ┃ ┃ ┣ 📜__init__.py
+ ┃ ┃ ┣ 📜augmentor.py
+ ┃ ┃ ┣ 📜flow_viz.py
+ ┃ ┃ ┣ 📜frame_utils.py
+ ┃ ┃ ┗ 📜utils.py
+ ┃ ┣ 📜__init__.py
+ ┃ ┣ 📜corr.py
+ ┃ ┣ 📜datasets.py
+ ┃ ┣ 📜extractor.py
+ ┃ ┣ 📜raft.py
+ ┃ ┗ 📜update.py
+ ┣ 📂input
+ ┃ ┗ 📜water_level.mp4
+ ┣ 📂models
+ ┃ ┗ 📜raft-things.pth
+ ┣ 📜ENPM673 Project 4 presentation (Group13).pdf
+ ┣ 📜README.md
+ ┣ 📜cnn_training.py
+ ┣ 📜main.py
+ ┗ 📜waterdetection.py
+ ```
 ## To Run our Code on the Vessel Movie to detect and mark water levels
 If have GPU, run code as is:
 ```Shell
