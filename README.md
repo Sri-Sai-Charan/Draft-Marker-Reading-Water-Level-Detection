@@ -1,4 +1,4 @@
-# Project 4 (Water Level Detection for Ship Hull)
+# Water Level Detection for Ship Hull
 Conducted for ENPM673 Spring 2022
 
 Sri Sai Charan V
